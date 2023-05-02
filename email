@@ -1,0 +1,14 @@
+%{
+%}
+%%
+[a-zA-z._0-9]+"@"[a-z]+".com" {printf("\nemail verified\n");}
+.+ {printf("\nemail not verified\n");}
+%%
+int yywrap(void){}
+int main()
+{
+printf("\nenter the email\n");
+yylex();
+printf("\n");
+return 0;
+}
