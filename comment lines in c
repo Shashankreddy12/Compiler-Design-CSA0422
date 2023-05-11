@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+	char a[20];
+	printf("Enter the Text:");
+	scanf("%s",&a);
+	if(a[0]=='/' && a[1]=='*' || a[0]=='/' && a[1]=='/'){
+		printf("It is a Comment");
+	}
+	else{
+		printf("It is not a Comment");
+	}	
+}
